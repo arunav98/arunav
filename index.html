@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mazbat College</title>
+	<link rel="stylesheet" type="text/css" href="navstyle.css">
+</head>
+<body>
+	<header>
+		<nav>
+		  <div id="navbtn" >
+		  	<div class="collapsed">
+		    	<span class="line top-ln"></span>
+		    	<span class="line middle-ln"></span>
+		    	<span class="line bottom-ln"></span>
+		    </div>
+		  </div>
+		  <div class=" responsive">  
+		  <ul>
+		  	<li ><a href="#">Home</a></li>
+		  	<li ><a href="#">About</a></li>
+		  	<li ><a href="#">Administration</a></li>
+		  	<li class="dropdown">
+		  		<a href="#">Department</a>
+		  		<div class="dropdown-content">
+			      <a href="#">Assamese</a>
+			      <a href="#">Bodo</a>
+			      <a href="#">Economics</a>
+			      <a href="#">Education</a>
+			      <a href="#">English</a>
+			      <a href="#">History</a>
+			      <a href="#">Political Science</a>
+			      <a href="#">Philosophy</a>
+			    </div>
+		  	</li>
+		  	<li class="dropdown">
+		  		<a href="#">Facility</a>
+		  		<div class="dropdown-content">
+			      <a href="#">Link 1</a>
+			      <a href="#">Link 2</a>
+			      <a href="#">Link 3</a>
+			    </div>
+		  	</li>
+		  	<li ><a href="#">Contact</a></li>
+		  </ul>
+		</div>
+	    </nav>
+	</header>
+
+a
+
+
+
+	<footer>
+		<div class="bottom-container">
+			<div class="bottom bottom-margin">Download</div>
+			<div class="bottom">Usefull Links</div>
+			<div class="bottom">Conatact Us</div>
+		</div>
+		<p class="arc">&copy 2020 All Right Reserved</p>
+	</footer>
+	<script src="./script/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$("#navbtn").click(function(){
+			$(".collapsed").toggleClass("closed");
+			$(".responsive").toggleClass("active");
+			$(".responsive ul li").toggleClass("nav-item");
+		});
+
+	</script>
+</body>
+</html>
